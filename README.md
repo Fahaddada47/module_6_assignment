@@ -1,6 +1,6 @@
 # module_6_assignment
 
-A new Flutter project.
+Snack message does not show
 
 ## Getting Started
 

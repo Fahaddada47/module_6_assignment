@@ -186,10 +186,58 @@ class MyApp extends StatelessWidget {
 // add more photo widgets here
                     ],
                   ),
+                  ListView(
+                    shrinkWrap: true,
+                    physics: NeverScrollableScrollPhysics(),
+                    children: [
+                      ListTile(
+                        leading: Image.network(
+                          'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
+                          width: 48.0,
+                          height: 48.0,
+                          fit: BoxFit.cover,
+                        ),
+                        title: Text('Photo 1'),
+                        subtitle: Text('Category 1'),
+                      ),
+                      ListTile(
+                        leading: Image.network(
+                          'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
+                          width: 48.0,
+                          height: 48.0,
+                          fit: BoxFit.cover,
+                        ),
+                        title: Text('Photo 2'),
+                        subtitle: Text('Category 2'),
+                      ),
+                      ListTile(
+                        leading: Image.network(
+                          'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
+                          width: 48.0,
+                          height: 48.0,
+                          fit: BoxFit.cover,
+                        ),
+                        title: Text('Photo 3'),
+                        subtitle: Text('Category 3'),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
+
+            ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                content: Text('Photos Uploaded Successfully!'),
+              ));
+            },
+            child: Icon(Icons.cloud_upload),
           ),
-        ));
+        ),
+    );
   }
 }
+
+

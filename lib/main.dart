@@ -43,144 +43,200 @@ class MyApp extends StatelessWidget {
                     runSpacing: 4.0, // gap between lines
                     children: <Widget>[
 // add your photo widgets here
-                      ElevatedButton(
-                        onPressed: () {
-                          // handle button press
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.white,
-                          fixedSize: Size(160.0, 120.0),
-                        ),
-                        child: Column(
-                          children: [
-                            Expanded(
-                              child: Image.network(
-                                'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
-                                fit: BoxFit.cover,
-                              ),
+                      Builder(
+                        builder: (BuildContext context) {
+                          return ElevatedButton(
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Clicked on photo!'),
+                                  backgroundColor: Colors.red, // Change the color here
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.white,
+                              fixedSize: Size(160.0, 120.0),
                             ),
-                            Text('Image 1',
-                                style: TextStyle(color: Colors.black)),
-                          ],
-                        ),
-                      ),
-
-                      ElevatedButton(
-                        onPressed: () {
-                          // handle button press
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.white,
-                          fixedSize: Size(160.0, 120.0),
-                        ),
-                        child: Column(
-                          children: [
-                            Expanded(
-                              child: Image.network(
-                                'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            Text('Image 2',
-                              style: TextStyle(color: Colors.black)),
-                          ],
-                        ),
-                      ),
-
-                      ElevatedButton(
-                        onPressed: () {
-                          // handle button press
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.white,
-                          fixedSize: Size(160.0, 120.0),
-                        ),
-                        child: Column(
-                          children: [
-                            Expanded(
-                              child: Image.network(
-                                'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            Text('Image 3',
-                              style: TextStyle(color: Colors.black)),
-                          ],
-                        ),
-                      ),
-                      ElevatedButton(
-                        onPressed: () {
-                          // handle button press
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.white,
-                          fixedSize: Size(160.0, 120.0),
-                        ),
-                        child: Column(
-                          children: [
-                            Expanded(
-                              child: Image.network(
-                                'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            Text('Image 4',
-                              style: TextStyle(color: Colors.black)),
-                          ],
-                        ),
-                      ),
-
-                      ElevatedButton(
-                        onPressed: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text('Clicked on photo!'),
-                              backgroundColor: Colors.blue,
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Image.network(
+                                    'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Text(
+                                  'Image 1',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ],
                             ),
                           );
                         },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.white,
-                          fixedSize: Size(160.0, 120.0),
-                        ),
-                        child: Column(
-                          children: [
-                            Expanded(
-                              child: Image.network(
-                                'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            Text('Image 5',
-                              style: TextStyle(color: Colors.black)),
-                          ],
-                        ),
                       ),
 
-                      ElevatedButton(
-                        onPressed: () {
-                          // handle button press
-                          final snackBar = SnackBar(
-                            content: Text('Clicked on photo!'),
-                          );
-                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                        },
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.white,
-                          fixedSize: Size(160.0, 120.0),
-                        ),
-                        child: Column(
-                          children: [
-                            Expanded(
-                              child: Image.network(
-                                'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
-                                fit: BoxFit.cover,
-                              ),
+                      Builder(
+                        builder: (BuildContext context) {
+                          return ElevatedButton(
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Clicked on photo!'),
+                                  backgroundColor: Colors.red, // Change the color here
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.white,
+                              fixedSize: Size(160.0, 120.0),
                             ),
-                            Text('Image 6',
-                              style: TextStyle(color: Colors.black)),
-                          ],
-                        ),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Image.network(
+                                    'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Text(
+                                  'Image 2',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
+
+                      Builder(
+                        builder: (BuildContext context) {
+                          return ElevatedButton(
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Clicked on photo!'),
+                                  backgroundColor: Colors.red, // Change the color here
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.white,
+                              fixedSize: Size(160.0, 120.0),
+                            ),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Image.network(
+                                    'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Text(
+                                  'Image 3',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
+                      Builder(
+                        builder: (BuildContext context) {
+                          return ElevatedButton(
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Clicked on photo!'),
+                                  backgroundColor: Colors.red, // Change the color here
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.white,
+                              fixedSize: Size(160.0, 120.0),
+                            ),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Image.network(
+                                    'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Text(
+                                  'Image 4',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
+                      Builder(
+                        builder: (BuildContext context) {
+                          return ElevatedButton(
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Clicked on photo!'),
+                                  backgroundColor: Colors.red, // Change the color here
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.white,
+                              fixedSize: Size(160.0, 120.0),
+                            ),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Image.network(
+                                    'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Text(
+                                  'Image 5',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
+
+                      Builder(
+                        builder: (BuildContext context) {
+                          return ElevatedButton(
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text('Clicked on photo!'),
+                                  backgroundColor: Colors.red, // Change the color here
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.white,
+                              fixedSize: Size(160.0, 120.0),
+                            ),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Image.network(
+                                    'https://raw.githubusercontent.com/Fahaddada47/ostad-flutter/main/module_06.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Text(
+                                  'Image 6',
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ],
+                            ),
+                          );
+                        },
                       ),
 
 // add more photo widgets here
@@ -227,17 +283,22 @@ class MyApp extends StatelessWidget {
             ),
 
             ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                content: Text('Photos Uploaded Successfully!'),
-              ));
-            },
-            child: Icon(Icons.cloud_upload),
+
+
+          floatingActionButton: Builder(
+            builder: (context) => FloatingActionButton(
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('Photos Uploaded Successfully!'),
+                    backgroundColor: Colors.blue, // Change the color here
+                  ),
+                );
+              },
+              child: Icon(Icons.cloud_upload),
+            ),
           ),
         ),
     );
   }
 }
-
-

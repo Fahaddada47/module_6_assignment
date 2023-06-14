@@ -39,10 +39,10 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   Wrap(
-                    spacing: 8.0, // gap between adjacent photos
-                    runSpacing: 4.0, // gap between lines
+                    spacing: 8.0,
+                    runSpacing: 4.0,
                     children: <Widget>[
-// add your photo widgets here
+
                       Builder(
                         builder: (BuildContext context) {
                           return ElevatedButton(
@@ -239,7 +239,7 @@ class MyApp extends StatelessWidget {
                         },
                       ),
 
-// add more photo widgets here
+
                     ],
                   ),
                   ListView(
